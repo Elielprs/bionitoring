@@ -1,0 +1,35 @@
+/*Mantiene el diseño responsivo
+    alineando los items al lado izquierdo*/
+/*
+.indicadores{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin-left: 10px;
+    gap: 20px 5px;
+}*/
+/*Alinea los items al centro, requieren separación por sección*/
+.indicadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titulo{
+    background-color: rgb(98, 98, 98);
+    margin: -5px;
+    margin-top: -15px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    justify-content: center;
+}
+.titulo h2{
+    margin-left: 10px;
+}
+.indicador{
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 500px;
+    width: 90%;
+    margin: auto;
+}
+/*#map {
+    height: 500px;
+    width: 50%;
+    margin: 0px 5%;
+} En la documentación de google esta como se debe de colocar el escuchador dentro de las marcas
+Puedes agregar igualmente así el escuchador para la info de los lados
+*/
+
+/*Texto encabezado*/
+.header{
+    width: auto;
+    height: auto;
+    margin-bottom: 1%;
+    border-color: rgb(40,119,44);
+    background-color: rgb(44,156,34);
+}
+.enc{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+/*Encabezado*/
+
+.busqueda{
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 25px;
+    font-weight: bold;
+}

@@ -1,0 +1,44 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+}
+.logo img{
+    margin-right: 50px;
+    width: 200px;
+    height: 60px;
+}
+
+.navbar label{
+    display: none;
+}
+
+.icon, .icon2{
+    display: inline-block;
+    font-size: 44px;
+    animation: float 5s ease-in-out infinite;
+}
+.icon{
+    animation-delay: 1s;
+}
+.icon2{
+    animation-delay: 2s;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

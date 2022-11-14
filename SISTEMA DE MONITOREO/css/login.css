@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/**/
+.form-login{
+    width: 350px;
+    height: 240px;
+    background-color: rgba(220, 220, 220, 0.800);
+    margin: auto;
+    margin-top: 70px;
+    border: solid 2px rgba(0, 0, 0, 0.600);
+    border-radius: 10px;
+    font-family: 'Voces', cursive;
+}
+
+.form-login h2{
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    background-color: rgb(9, 150, 9);
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.form{
+    padding: 20px 35px;
+    text-align: right;
+}
+
+.form .campos{
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.form .confirm{
+    padding: 6px;
+    width: 90px;
+    background-color: rgb(3, 169, 244);
+    color: white;
+    border: solid 2px rgba(0, 0, 0, 0.500);
+}
