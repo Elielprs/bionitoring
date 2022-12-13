@@ -12,7 +12,7 @@ if(isset($_SESSION["id_user"])){
         <link rel="stylesheet" href="css/header.css?30.0">
         <link rel="stylesheet" href="css/menu.css?5.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <title>Consultar Dispositivo</title>
+        <title>Eliminar Dispositivo</title>
         <script type="text/javascript"> 
             function validarFecha(f){
                 
@@ -48,7 +48,7 @@ if(isset($_SESSION["id_user"])){
             <?php include_once("menu.php");?>
         </nav>
         <div class="form-user-div">
-            <h1><span>Consultar Dispositivo</span></h1>
+            <h1><span>Eliminar Dispositivo</span></h1>
             <div class="iconos">        
                 <section id="selected">
                     <a href="eliminarDisp.php"><img src="Img/Iconos/eliminar.png">

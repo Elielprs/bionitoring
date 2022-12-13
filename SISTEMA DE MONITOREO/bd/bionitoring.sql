@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-11-2022 a las 06:06:28
+-- Tiempo de generación: 13-12-2022 a las 19:48:53
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -67,7 +67,8 @@ CREATE TABLE `dispositivo` (
 
 INSERT INTO `dispositivo` (`id_dispositivo`, `id_user`, `nombreDisp`, `modelo`, `direccion`, `fechaInst`, `empresa`, `latitud`, `longitud`) VALUES
 (1, 2, 'BioUrban', '2.0', 'Calle 16-C, No. 1901, Col. Jardines de San Dimas, CP 94570, Cordoba, Ver.', '2015-12-17', 'Biomitech', 18.89138, -96.947614),
-(2, 2, 'Biourban', '1.0', 'Prueba', '2022-10-04', 'Prueba', 18.854679, -97.098461);
+(3, 5, 'BioUrban', '2.0', 'Oriente 9, Emiliano Zapata, 94320, Orizaba, Ver.', '2022-12-12', 'TECNM Orizaba', 18.855611, -97.098459),
+(4, 5, 'BioUrban', '3.0', 'Conocido s/n, Córdoba, Veracruz', '2022-08-02', 'Biomechatronics', 12.123456, 12.123456);
 
 -- --------------------------------------------------------
 
@@ -112,8 +113,7 @@ INSERT INTO `users` (`id_user`, `nombre`, `usuario`, `password`, `roll`) VALUES
 (1, 'Eliel Pérez Ramos', 'elielprz', 'eliel1010', 'Administrador'),
 (2, 'Elian Rafael Salmeron Gomez', 'ElianSalmeron', 'elian1010', 'Usuario'),
 (3, 'Amayrani Gallardo Aguilar', 'Amy26', 'amayrani0426', 'Administrador'),
-(4, 'Paola Lara Bernardo', 'paolalara', 'paola1010', 'Usuario'),
-(5, 'Consuelo Lizeth Medina Morales', 'lizmedina', 'medina1010', 'Usuario');
+(5, 'Lizeth Hernandez', 'lizHernandez', 'medina1010', 'Usuario');
 
 --
 -- Índices para tablas volcadas

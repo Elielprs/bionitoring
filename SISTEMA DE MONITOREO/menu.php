@@ -21,6 +21,7 @@
                 <a href="eliminarDisp.php">Eliminar Dispositivo</a>
             </div>
         </li>
+        <li><a href="monitoring_admin.php">Monitoring</a></li>
         <li><a href="logout.php">Cerrar sesión</a></li>
     </ul>
 <?php   }

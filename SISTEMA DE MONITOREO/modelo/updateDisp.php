@@ -13,6 +13,7 @@ if(isset($_SESSION['rol'])){
             
             <div class="register-user">
                 <form id="form-user-register" method="post" action="modelo/updateD.php">
+                    <input type="text" id="id" name="id" value="<?php echo $busqueda?>" hidden>
                     <div>
                         <label id="label2" for="nombre">Dispositivo: </label>
                         <input class="campos" type="text" id="name" name="name" size="25" value="<?php echo $mostrar['nombreDisp']?>" autocomplete="off" required>
@@ -44,11 +45,17 @@ if(isset($_SESSION['rol'])){
                     <div>
                         <label id="label4" for="rol">Propietario: </label>
                         <?php
-                            $sql = "SELECT id_user, nombre FROM users WHERE roll like 'Usuario'";
+                            $sql = "SELECT id_user, nombre FROM users WHERE id_user like '%$mostrar[id_user]'";
                             $result = mysqli_query($conexion,$sql);
                         ?>
                         <select class="cat" name="propietario">
-                            <?php while($mostrar = mysqli_fetch_array($result)){
+                            <?php if ($mostrar = mysqli_fetch_array($result)){?>
+                                <option value="<?php echo $mostrar['id_user'];?>"><?php echo $mostrar["nombre"];?></option>
+                            <?php } ?>
+                            <?php
+                            $sql = "SELECT id_user, nombre FROM users WHERE roll like 'Usuario'";
+                            $result = mysqli_query($conexion,$sql);
+                            while($mostrar = mysqli_fetch_array($result)){
                                 ?>
                                 <option value="<?php echo $mostrar['id_user'];?>"><?php echo $mostrar["nombre"];?></option>
                             <?php }?>

@@ -12,7 +12,7 @@ if(isset($_SESSION["id_user"])){
         <link rel="stylesheet" href="css/header.css?30.0">
         <link rel="stylesheet" href="css/menu.css?5.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <title>Agregar Usuario</title>
+        <title>Agregar Dispositivo</title>
         <script type="text/javascript"> 
             function validarFecha(f){
                 
